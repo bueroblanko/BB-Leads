@@ -1,10 +1,10 @@
 <?php
 /**
- * Plugin Name: Buero Leads Plugin
- * Plugin URI: https://example.com/buero-leads-plugin
+ * Plugin Name: Buero Blanko Leads
+ * Plugin URI: https://bueroblanko.de
  * Description: A plugin that retrieves lead information from an API and displays it via shortcode.
- * Version: 1.0.3
- * Author: Your Name
+ * Version: 1.0.4
+ * Author: bueroblanko
  * License: GPL v2 or later
  * Text Domain: buero-leads-plugin
  */
@@ -15,7 +15,7 @@ if (!defined('ABSPATH')) {
 }
 
 // Define plugin constants
-define('BUERO_LEADS_PLUGIN_VERSION', '1.0.0');
+define('BUERO_LEADS_PLUGIN_VERSION', '1.0.4');
 define('BUERO_LEADS_PLUGIN_URL', plugin_dir_url(__FILE__));
 define('BUERO_LEADS_PLUGIN_PATH', plugin_dir_path(__FILE__));
 
