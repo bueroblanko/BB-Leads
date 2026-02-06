@@ -1,0 +1,74 @@
+/* CV Download Button Styles */
+.cv-download-button {
+    background-color: #0073aa;
+    color: white;
+    border: none;
+    padding: 12px 24px;
+    font-size: 16px;
+    font-weight: 600;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    position: relative;
+    min-width: 140px;
+    text-align: center;
+}
+
+.cv-download-button:hover:not(:disabled) {
+    background-color: #005a87;
+    transform: translateY(-1px);
+    box-shadow: 0 4px 8px rgba(0, 115, 170, 0.3);
+}
+
+.cv-download-button:active:not(:disabled) {
+    transform: translateY(0);
+    box-shadow: 0 2px 4px rgba(0, 115, 170, 0.3);
+}
+
+.cv-download-button:disabled {
+    background-color: #ccc;
+    cursor: not-allowed;
+    transform: none;
+    box-shadow: none;
+}
+
+.cv-download-button .btn-text {
+    display: inline-block;
+}
+
+.cv-download-button .btn-loading {
+    display: none;
+    color: #fff;
+}
+
+.cv-download-button:disabled .btn-loading {
+    display: inline-block;
+}
+
+.cv-download-button:disabled .btn-text {
+    display: none;
+}
+
+/* Loading animation */
+.cv-download-button .btn-loading::after {
+    content: '';
+    display: inline-block;
+    width: 12px;
+    height: 12px;
+    border: 2px solid #ffffff;
+    border-radius: 50%;
+    border-top-color: transparent;
+    animation: spin 1s linear infinite;
+    margin-left: 8px;
+}
+
+@keyframes spin {
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+/* Custom styling hook for theme customization */
+.cv-download-button.custom-style {
+    /* Add your custom styles here */
+}
