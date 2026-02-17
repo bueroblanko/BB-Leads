@@ -240,7 +240,7 @@ class BueroLeadsPlugin {
              return !empty($atts['default']) ? $atts['default'] : "";
         }
         
-        return $lead_data[$atts['column']] . "<span style=\"display:none\" class=\"data_id_buero\">$page_id</span>k";
+        return $lead_data[$atts['column']] . "<span style=\"display:none\" class=\"data_id_buero\">$page_id</span>";
     }
     
 
